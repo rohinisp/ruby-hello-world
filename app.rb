@@ -23,7 +23,7 @@ def configure_database
 end
 
 configure do
-  puts "Run app...Hello world"
+  puts "Run app...Hello world. Just testing for the lab"
 
   unless ENV["DATABASE_SERVICE_HOST"].nil? && ENV["DATABASE_TEST_SERVICE_HOST"].nil?
     configure_database
