@@ -46,7 +46,7 @@ get '/keys/:id' do
   if KeyPair.exists?(params[:id])
     KeyPair.find(params[:id]).value
   else
-    not_found "Key not found. Try with another key"
+    not_found "Key not found."
   end
 end
 
