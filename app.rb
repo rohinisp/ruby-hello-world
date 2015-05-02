@@ -53,7 +53,7 @@ end
 post '/keys/:id' do
   if KeyPair.exists?(params[:id])
     KeyPair.update(params['id'], value: params['value'])
-    "Key updated"
+    "Key updated. Cannot use old key"
   else
     KeyPair.create(key:params[:id],value:params['value']).save
     "Key created"
